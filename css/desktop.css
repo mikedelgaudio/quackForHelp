@@ -36,6 +36,21 @@ a {
 	font-size: 2em;
 }
 
+
+
+/*how to make the logo image stay with text*/
+img.brand-logo {
+	vertical-align:middle;
+	height:80px;
+}
+@media screen and (max-width:400px){
+	img.brand-logo{
+		display: none;
+	}
+}
+
+
+
 /*
 .nav_main {
 	margin-top: 5px;
@@ -83,6 +98,7 @@ a {
 		margin: 0 auto;
 		/*max-width: 1150px;*/
 	}
+	
 }
 
 @media (min-width: 1025px) {
@@ -91,4 +107,3 @@ a {
 		justify-content: space-between;
 	}
 }
-
