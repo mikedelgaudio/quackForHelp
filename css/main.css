@@ -85,10 +85,11 @@ img.brand-logo {
 }
 
 /*Media*/
-@media (min-width: 769px) {
+@media (min-width: 601px) {/*changed from 769px*/
 	.header,
 	.nav_main {
 		display: flex;
+		justify-content: space-around;
 	}
 	
 	.header {
@@ -106,4 +107,48 @@ img.brand-logo {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+}
+
+/*to get rid of the column list of links*/
+@media screen and (max-width: 600px){
+	.nav_main{
+		display: flex;
+		justify-content: space-around;
+	}
+	.nav_main a{
+		padding: 10px 2px;
+	}
+}
+
+
+/*Footer*/
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #0D4656;
+   text-align: center;
+   padding: 10px;
+}
+.footer-text{
+	color:white;
+	font-size: .5em;
+}
+@media screen and (min-width: 769px){
+	.footer-text{
+		font-size: .75em;
+	}
+}
+
+
+/*Main Content Template*/
+.main-content{
+	display: flex;
+	justify-content: center;
+	background-color: #E7F8FC;
+	margin: 10px 3%;
+	/*height:100rem;*/
+	padding: 1%;
+	min-height: 73vh;
 }
