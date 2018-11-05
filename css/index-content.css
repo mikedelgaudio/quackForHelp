@@ -1,3 +1,117 @@
 @charset "UTF-8";
 /* CSS Document */
 /*CSS for INDEX CONTENT*/
+.welcome{
+	font-size: 4em;
+	text-shadow: 3px 3px 9px rgba(150, 150, 150, 1);
+	font-weight: bold;
+	color: #05566C;
+}
+
+.welcome-page{
+	text-align: center;
+}
+
+.greeting{
+	font-size: 1.3em;
+	color: #1F2B38;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*
+img.emoji{
+	width: 400px;
+	height: 200px;
+}*/
+
+div.gallery:hover {
+    opacity:0.5;
+}
+
+div.gallery img {
+    width: 70%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.spacer{
+	height: 8%; 
+	overflow: hidden; 
+	width: 100%;	
+}
+
+/*div for caption not sure*/
+
+.captionText{
+	margin-bottom: 10%;
+}
+
+.captionEnd{
+	text-shadow: 0px 0px 26px rgba(150, 150, 150, 0.67);
+}
+
+
+
+@media screen and (max-width:480px){
+	.welcome{
+	font-size: 2em;
+	}
+	.spacer{
+	height: 1%; 
+	overflow: hidden; 
+	width: 100%;	
+	}
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+	.welcome{
+	font-size: 3em;
+	}
+	.greeting{
+		font-size: 1em;
+	}
+	.spacer{
+	height: 3%; 
+	overflow: hidden; 
+	width: 100%;	
+	}
+}
+
+@media screen and (min-width: 768px){
+	.captionText{
+		padding-top: 3%;
+	}
+}
+
+
