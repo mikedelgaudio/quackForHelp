@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /* CSS Document Desktop*/
+/*I pledge my honor that I have abided by the Stevens Honor System.
+Michael DelGaudio
+Brandon Seidman
+Katelyn Chen
+Milad Masoodi
+Mitra Modi*/
 
 /*Reset margins and padding*/
  * {
@@ -150,4 +156,31 @@ img.brand-logo {
 	margin: 10px 3%;
 	padding: 1%;
 	min-height: 73vh;
+}
+
+/*For header title on each page*/
+.quackCenter{
+	text-align:center;
+	width:auto
+}
+.quackPadding{
+	padding-top:32px;
+	padding-bottom:32px;
+}
+.quackBackgroundForText{
+	background-color:#000;
+	color:#fff;
+	display:inline-block;
+	padding-left:8px;
+	padding-right:8px;
+	text-align:center;
+}
+.quackSpacing{
+	letter-spacing:4px;
+}
+
+h5.quackHeader{
+	font-size:18px;
+	font-weight:400;
+	margin:10px 0;
 }

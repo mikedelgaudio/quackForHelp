@@ -1,3 +1,85 @@
 @charset "UTF-8";
 /* CSS Document */
+/*I pledge my honor that I have abided by the Stevens Honor System.
+Michael DelGaudio
+Brandon Seidman
+Katelyn Chen
+Milad Masoodi
+Mitra Modi*/
 /*About CSS for CONTENT*/
+/*h5.quackHeader{
+	font-size:18px;
+	font-weight:400;
+	margin:10px 0;
+}*/
+
+.author{
+	font-weight: bold;
+}
+
+.questionLink{
+	padding-bottom: 5%;
+	text-align: center;
+}
+/*to get rid of the column list of links*/
+@media screen and (max-width: 600px){
+	.questionLink{
+		padding-bottom: 10%;
+	}
+}
+
+.lighterText{
+	opacity: 0.50;
+}
+
+.outsideContainer{
+	padding:0.01em 16px;
+}
+
+.innerContent{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:700px;
+}
+
+/*This for the header About Quack for Help*/
+/*.quackCenter{
+	text-align:center;
+	width:auto
+}
+.quackPadding{
+	padding-top:32px;
+	padding-bottom:32px;
+}
+.quackBackgroundForText{
+	background-color:#000;
+	color:#fff;
+	display:inline-block;
+	padding-left:8px;
+	padding-right:8px;
+	text-align:center;
+}
+.quackSpacing{
+	letter-spacing:4px;
+}*/
+/**/
+
+/*Quote CSS*/
+.quackQuote{
+	padding:0.01em 16px;
+	margin-top:16px;
+	margin-bottom:16px;
+}
+.quackDarkerBackground{
+	color:#000;
+	background-color:#96E0F1;
+}
+.quackBorderLeft{
+	border-left: 6px solid #ABABAB;
+}
+/**/
+.about-duck{
+	width:100%;
+	max-width:1000px;
+	margin-top:16px;
+}

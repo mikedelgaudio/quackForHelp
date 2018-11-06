@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
+/*I pledge my honor that I have abided by the Stevens Honor System.
+Michael DelGaudio
+Brandon Seidman
+Katelyn Chen
+Milad Masoodi
+Mitra Modi*/
 /*CSS for INDEX CONTENT*/
 .welcome{
 	font-size: 4em;
@@ -18,11 +24,6 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-/*
-img.emoji{
-	width: 400px;
-	height: 200px;
-}*/
 
 div.gallery:hover {
     opacity:0.5;
@@ -114,4 +115,7 @@ div.desc {
 	}
 }
 
+.subText{
+	opacity: 0.5;
+}
 
