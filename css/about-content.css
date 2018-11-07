@@ -7,11 +7,6 @@ Katelyn Chen
 Milad Masoodi
 Mitra Modi*/
 /*About CSS for CONTENT*/
-/*h5.quackHeader{
-	font-size:18px;
-	font-weight:400;
-	margin:10px 0;
-}*/
 
 .author{
 	font-weight: bold;
@@ -42,42 +37,21 @@ Mitra Modi*/
 	max-width:700px;
 }
 
-/*This for the header About Quack for Help*/
-/*.quackCenter{
-	text-align:center;
-	width:auto
-}
-.quackPadding{
-	padding-top:32px;
-	padding-bottom:32px;
-}
-.quackBackgroundForText{
-	background-color:#000;
-	color:#fff;
-	display:inline-block;
-	padding-left:8px;
-	padding-right:8px;
-	text-align:center;
-}
-.quackSpacing{
-	letter-spacing:4px;
-}*/
-/**/
 
 /*Quote CSS*/
 .quackQuote{
 	padding:0.01em 16px;
 	margin-top:16px;
 	margin-bottom:16px;
-}
-.quackDarkerBackground{
+	
 	color:#000;
 	background-color:#96E0F1;
-}
-.quackBorderLeft{
+	
 	border-left: 6px solid #ABABAB;
 }
 /**/
+
+/*Duck Image*/
 .about-duck{
 	width:100%;
 	max-width:1000px;

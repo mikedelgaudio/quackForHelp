@@ -19,6 +19,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+
 /*Nav Bar*/
 header {
 	line-height: 1.6;
@@ -57,11 +58,6 @@ img.brand-logo {
 
 
 
-/*
-.nav_main {
-	margin-top: 5px;
-
-}*/
 
 .logo a,
 .nav_main a {
@@ -103,9 +99,7 @@ img.brand-logo {
 		align-items: center;
 		width: 100%;
 		margin: 0 auto;
-		/*max-width: 1150px;*/
 	}
-	
 }
 
 @media (min-width: 1025px) {
@@ -114,6 +108,7 @@ img.brand-logo {
 		justify-content: space-between;
 	}
 }
+
 
 /*to get rid of the column list of links*/
 @media screen and (max-width: 600px){
@@ -125,6 +120,7 @@ img.brand-logo {
 		padding: 10px 2px;
 	}
 }
+
 
 
 /*Footer*/
@@ -159,28 +155,24 @@ img.brand-logo {
 }
 
 /*For header title on each page*/
-.quackCenter{
+h5.quackHeader{
+	font-size:18px;
+	font-weight:400;
+	margin:10px 0;
+	
 	text-align:center;
-	width:auto
-}
-.quackPadding{
+	width:auto;
+	
 	padding-top:32px;
 	padding-bottom:32px;
 }
-.quackBackgroundForText{
+h5.quackHeader span {
 	background-color:#000;
 	color:#fff;
 	display:inline-block;
 	padding-left:8px;
 	padding-right:8px;
 	text-align:center;
-}
-.quackSpacing{
+	
 	letter-spacing:4px;
-}
-
-h5.quackHeader{
-	font-size:18px;
-	font-weight:400;
-	margin:10px 0;
 }
