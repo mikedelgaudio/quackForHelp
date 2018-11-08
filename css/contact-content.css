@@ -16,35 +16,55 @@ Mitra Modi*/
 	padding: 1%;
 	min-height: 73vh;
 }
-.hello{
+h3{
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
 }
 h5.quackHeader{
-	padding-top:32px;
+	padding-top:10px;
 	padding-bottom:5px;
 }
-.list{
-  background-color: white;
-  padding: 20px;
+
+h4{
+  padding-bottom: 10px;
 }
+.list{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .lighterText{
+  color: #0088FF;
   opacity: .50;
-  background-color: lightgray;
-  padding: 20px 10px;
+  padding-bottom: 5px;
+}
+.pad{
+  padding-top: 7px;
 }
 .user-input{
-  background-color: gray;
-  padding: 10px;
+  background-color: #96E0F1;
+  padding: 20px 15px;
 }
 li{
   padding: 10px;
+}
+textarea::placeholder{
+  font-family: arial;
+  font-size: 20;
+}
+input::placeholder{
+  font-family: arial;
+  font-size: 20;
 }
 .user{
   display: flex;
   flex-direction: column;
 }
-.text{
-  display: flex;
-
+input{
+  width: 100%;
+  height: 25px;
+}
+textarea{
+  width: 100%;
+  height: 80px;
 }
