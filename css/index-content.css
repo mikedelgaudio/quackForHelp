@@ -26,7 +26,10 @@ Mitra Modi*/
 
 
 div.gallery:hover {
-    opacity:0.5;
+	/*opacity: 0.8;*/
+	transform: scale(1.2);
+    transition-duration: 300ms;
+    cursor: pointer;
 }
 
 div.gallery img {
