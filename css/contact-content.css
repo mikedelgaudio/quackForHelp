@@ -20,6 +20,15 @@ h3{
   text-align: center;
   padding-bottom: 20px;
 }
+img{
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: none;
+}
+span:hover + img{
+  display: block;
+}
 h5.quackHeader{
 	padding-top:10px;
 	padding-bottom:5px;
