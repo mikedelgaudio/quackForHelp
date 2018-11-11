@@ -124,6 +124,12 @@ div.desc {
 	overflow: hidden; 
 	width: 100%;	
 	}
+	
+	.responsiveq{
+	padding: 0px 0px 15px 0px;
+    float: left;
+    width: 100%;
+}
 }
 
 @media screen and (min-width:481px) and (max-width:768px){
@@ -138,28 +144,62 @@ div.desc {
 	overflow: hidden; 
 	width: 100%;	
 	}
+	
+	.responsiveq{
+	padding: 0px 0px 15px 0px;
+    float: left;
+    width: 200%;
+}
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width:1200px){
 	.captionText{
 		padding-top: 3%;
 	}
+	
+	.responsiveq{
+	padding: 0px 0px 15px 0px;
+    float: left;
+    width: 400%;
+}
+}
+
+@media screen and (min-width: 1200px){
+	.captionText{
+		padding-top: 3%;
+	}
+	
+	.responsiveq{
+	padding: 0px 0px 15px 0px;
+    float: left;
+    width: 600%;
+}
 }
 
 .subText{
 	opacity: 0.5;
 }
 
-.responsiveq{
-	padding: 0px 0px 15px 0px;
-    float: left;
-    width: 80%;
-}
+
 
 .question{
 	border: medium;
 	border-color: black;
 	border-style: solid;
+	text-align: center;
+}
+
+.AQ{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.formlist{/*WORK ON CENTERING RADIO BUTTONS*/
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	vertical-align: middle;
 }
 
 
