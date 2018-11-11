@@ -20,11 +20,11 @@ h3{
   text-align: center;
   padding-bottom: 20px;
 }
-img{
+img.herc{
   height: 200px;
   width: 200px;
   margin: 0 auto;
-  display: none;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 span:hover + img{
   display: block;
@@ -35,6 +35,7 @@ h5.quackHeader{
 }
 
 h4{
+	padding-top: 10px;
   padding-bottom: 10px;
 }
 .list{
@@ -54,7 +55,7 @@ h4{
   background-color: #96E0F1;
   padding: 20px 15px;
 }
-li{
+ul.user-input>li{
   padding: 10px;
 }
 textarea::placeholder{
