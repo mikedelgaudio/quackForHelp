@@ -62,12 +62,16 @@ Mitra Modi-->
 		<h4>&nbsp;Please tell us how we can help you in Herc's 146 class:</h4>
 			<div class="inner-content">
 				<div class="user">
-					<ul class="user-input">
-						<li><input type="text" id= "name" placeholder=" Your Name" /></li>
-						<li><input type="text" id="email" placeholder=" Email" /></li>
-						<li><textarea class="imtryingsomethingnew" id="message" type="text" placeholder=" Message" ></textarea></li>
-						<li><button type="button">Send Message!</button></li>
-					</ul>
+					<div class="user-input">
+						
+						<form id="contactFormFields">
+						<input type="text" id= "name" required placeholder=" Your Name" />
+						<input type="email" id="email" required placeholder=" Email" />
+						<textarea class="imtryingsomethingnew" id="message" required type="text" placeholder=" Message" ></textarea>
+						
+						<button class="sumbits" input="submit" form="contactFormFields" value="Submit">Submit</button>
+						</form>
+					</div>
 				</div>
 				<div class="contact">
 					<ul class="list">

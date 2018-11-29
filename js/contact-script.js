@@ -10,7 +10,7 @@ function setBackground(e){
 }
 
 window.addEventListener("load", function(){
-	var inputTypeSelectors = "input[type=text], textarea[type=text]";
+	var inputTypeSelectors = "input[type=text], textarea[type=text], input[type=email]";
 	var fields = document.querySelectorAll(inputTypeSelectors);
 	for (i=0; i<fields.length; i++){
 		fields[i].addEventListener("focus", setBackground);
