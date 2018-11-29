@@ -37,6 +37,8 @@ getHerc.addEventListener("mouseover", function(){
 	jokeText.style.fontSize = "500%";
 	jokeText.style.left = "25%";
 	
+	jokeText.style.boxShadow = "3px 3px 5px 6px grey";
+	
 	document.getElementById("test").appendChild(jokeText);
 });
 
