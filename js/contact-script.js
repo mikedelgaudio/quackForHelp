@@ -41,6 +41,7 @@ getHerc.addEventListener("mouseover", function(){
 });
 
 getHerc.addEventListener("mouseleave", function(){
-	test.removeChild(jokeText);
+	var inv = document.querySelector('#makeInvis');
+	inv.parentNode.removeChild(inv);
 });
 
