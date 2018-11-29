@@ -209,5 +209,12 @@ div.desc {
 	margin-bottom: 20px;
 }
 
+.sumbits{
+	margin-bottom: 20%;
+	font-size: 100%;
+	height:100px;
+	width: 100px;
+	border-radius: 50px;
+}
 
 
