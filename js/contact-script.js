@@ -1,4 +1,5 @@
 // Contact Page JS
+
 //This first function is when you click in the text fields the background changes
 
 function setBackground(e){
@@ -20,9 +21,9 @@ window.addEventListener("load", function(){
 
 
 
+//The joke when hovering over Herc picture
 
 var getHerc = document.getElementById("hercFace");
-
 
 getHerc.addEventListener("mouseover", function(){
 	var jokeText = document.createElement("h5");
@@ -48,6 +49,7 @@ getHerc.addEventListener("mouseleave", function(){
 
 
 
+//Function that runs on submit will grab the values inputted
 
 function handleFormSubmit(event) {
    // This next line prevents the reload of the form
@@ -65,43 +67,33 @@ function handleFormSubmit(event) {
 	
 }
 
+//Making the Contact Form Make a New Text Field:
+
 var submittedAlreadyOnce = false;
 
 function addNewPost(nameTyped, emailTyped) {
 	
-	if (submittedAlreadyOnce == false){
-		var parentPostDiv = document.createElement("div");
-		parentPostDiv.setAttribute("id", "post");
-		
-		var namePost = document.createElement("h1");
-		namePost.textContent = "Thank you " + nameTyped + "!";
-		
-		var emailPost = document.createElement("p");
-		emailPost.textContent = "We will contact you at " + emailTyped + " soon!";
-		
-		document.getElementById("contactFormDiv").appendChild(parentPostDiv);
-		
-		submittedAlreadyOnce = true;
-	}else{
+	if (submittedAlreadyOnce == true){
 		var inv = document.querySelector('#post');
 		inv.parentNode.removeChild(inv);
-		
-		var parentPostDiv = document.createElement("div");
+	}
+	
+	var parentPostDiv = document.createElement("div");
 		parentPostDiv.setAttribute("id", "post");
 		
-		var namePost = document.createElement("h1");
+	var namePost = document.createElement("h1");
 		namePost.textContent = "Thank you " + nameTyped + "!";
 		
-		var emailPost = document.createElement("p");
+	var emailPost = document.createElement("p");
 		emailPost.textContent = "We will contact you at " + emailTyped + " soon!";
-		
-	}
 	
 	parentPostDiv.appendChild(namePost);
 	parentPostDiv.appendChild(emailPost);
 	document.getElementById("contactFormDiv").appendChild(parentPostDiv);
+	submittedAlreadyOnce = true; //We want to make sure to delete the previous post before making a new one...
 	
 }
+
 
 window.onload = () => {
    // Once our window is loaded, we add the event listener for our post form
