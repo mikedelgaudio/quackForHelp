@@ -10,7 +10,7 @@ function setBackground(e){
 }
 
 window.addEventListener("load", function(){
-	var inputTypeSelectors = "input[type=text], textarea[type=text], input[type=email]";
+	var inputTypeSelectors = "input[type=text], textarea[type=text], input[type=email], input[type=tel]";
 	var fields = document.querySelectorAll(inputTypeSelectors);
 	for (i=0; i<fields.length; i++){
 		fields[i].addEventListener("focus", setBackground);
@@ -35,9 +35,9 @@ getHerc.addEventListener("mouseover", function(){
 	
 	jokeText.style.position = "fixed";
 	jokeText.style.fontSize = "500%";
-	jokeText.style.left = "25%";
+	jokeText.style.marginLeft = "25%";
 	
-	jokeText.style.boxShadow = "3px 3px 5px 6px grey";
+	//jokeText.style.boxShadow = "3px 3px 5px 6px grey";
 	
 	document.getElementById("test").appendChild(jokeText);
 });
@@ -47,3 +47,16 @@ getHerc.addEventListener("mouseleave", function(){
 	inv.parentNode.removeChild(inv);
 });
 
+function handleFormSubmit(event) {
+   // This next line prevents the reload of the form
+   event.preventDefault();
+   // Get values of inputs
+   // Pass values to addNewPost()
+	var username = document.getElementById("name").value;
+	console.log("Name typed: " + username);
+}
+
+window.onload = () => {
+   // Once our window is loaded, we add the event listener for our post form
+   contactFormFields.addEventListener('submit', handleFormSubmit);
+};

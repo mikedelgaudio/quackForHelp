@@ -57,12 +57,15 @@ Mitra Modi*/
 
 
 div.gallery:hover {
-    opacity:0.5;
+    transform: scale(1.2);
+    transition-duration: 300ms;
+    cursor: pointer;
 }
 
 div.gallery img {
     width: 70%;
     height: auto;
+	box-shadow: 10px 10px 94px -26px rgba(0,0,0,0.75);
 }
 
 div.desc {
