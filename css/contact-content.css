@@ -26,6 +26,7 @@ img.herc{
   width: 200px;
   margin: 0 auto;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  transition: transform 1s ease-in-out;
 }
 img.herc:hover{
 	transform: scale(1.2);
@@ -96,6 +97,12 @@ textarea{
 	height:50px;
 	width: 100px;
 	border-radius: 50px;
+	cursor: pointer;
+	transition: transform 1s ease-in-out;
+}
+.sumbits:hover{
+	transform: scale(1.1);
+    transition-duration: 300ms;
 }
 
 fieldset{
