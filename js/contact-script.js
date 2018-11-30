@@ -55,6 +55,8 @@ function handleFormSubmit(event) {
    // Get values of inputs
    // Pass values to addNewPost()
 	var nameTyped = document.getElementById("name").value;
+	//Turn the name enter and make first letter capital
+	nameTyped = nameTyped.charAt(0).toUpperCase() + nameTyped.slice(1);
 	console.log("Name typed: " + nameTyped);
 	var emailTyped = document.getElementById("email").value;
 	console.log("Email typed: " + emailTyped);
