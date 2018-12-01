@@ -62,7 +62,7 @@ function addNewPost(nameTyped) {
 		parentPostDiv.setAttribute("id", "post");
 		
 	var namePost = document.createElement("h1");
-		namePost.textContent = "Thank you for taking our quiz, " + nameTyped + ".";
+		namePost.textContent = "Hey, " + nameTyped + "!";
 		
 	var responsePost = document.createElement("p");
 		responsePost.setAttribute("class", "createSpaceForText")
@@ -129,6 +129,26 @@ window.onload = () => {
 	quiz4.addEventListener('submit', handleFormSubmit);
 };
 
+
 //So the responses are different each refresh of the page...
 var myArray = ["we think you should go see the CA's", "you should go visit Herc", "drop the class", "maybe sit down with Herc", "you should change majors", "you should cry"];
 var randomSuggestion = myArray[Math.floor(Math.random() * myArray.length)];
+
+
+//When clicking into text field for name input change colors....
+function setBackground(e){
+	if (e.type == "focus"){
+		e.target.style.backgroundColor = "#FFE6A2";
+	}else if (e.type == "blur"){
+		e.target.style.backgroundColor = "white";
+	}
+}
+
+window.addEventListener("load", function(){
+	var inputTypeSelectors = "input[type=text]";
+	var fields = document.querySelectorAll(inputTypeSelectors);
+	for (i=0; i<fields.length; i++){
+		fields[i].addEventListener("focus", setBackground);
+		fields[i].addEventListener("blur", setBackground);
+	}
+});
