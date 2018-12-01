@@ -1,26 +1,60 @@
 // JavaScript Document
+var flag = "";
 
+var quiz1Image = document.getElementById("Quiz1");
+quiz1Image.addEventListener("click", function(){
+	document.getElementsByClassName('welcome-page')[0].style.display = 'none';
+	document.getElementsByClassName('Quiz1')[0].style.display = 'flex';
+	flag = "quiz1";
+});
+
+var quiz2Image = document.getElementById("Quiz2");
+quiz2Image.addEventListener("click", function(){
+	document.getElementsByClassName('welcome-page')[0].style.display = 'none';
+	document.getElementsByClassName('Quiz2')[0].style.display = 'flex';
+	flag = "quiz2";
+});
+
+var quiz3Image = document.getElementById("Quiz3");
+quiz3Image.addEventListener("click", function(){
+	document.getElementsByClassName('welcome-page')[0].style.display = 'none';
+	document.getElementsByClassName('Quiz3')[0].style.display = 'flex';
+	flag = "quiz3";
+});
+
+var quiz4Image = document.getElementById("Quiz4");
+quiz4Image.addEventListener("click", function(){
+	document.getElementsByClassName('welcome-page')[0].style.display = 'none';
+	document.getElementsByClassName('Quiz4')[0].style.display = 'flex';
+	flag = "quiz4";
+});
+
+ 
 
 function handleFormSubmit(event) {
    // This next line prevents the reload of the form
    event.preventDefault();
    // Get values of inputs
    // Pass values to addNewPost()
-	var nameTyped = document.getElementById("quiz1name").value;
+	if (flag == "quiz1"){
+		var nameTyped = document.getElementById("quiz1name").value;	
+	}else if (flag == "quiz2"){
+		var nameTyped = document.getElementById("quiz2name").value;
+	}else if (flag == "quiz3"){
+		var nameTyped = document.getElementById("quiz3name").value;
+	}else{
+		var nameTyped = document.getElementById("quiz4name").value;
+	}
+	
+	nameTyped = nameTyped.charAt(0).toUpperCase() + nameTyped.slice(1);
+	
 	console.log("Name typed: " + nameTyped);
 	
 	addNewPost(nameTyped);
 	
 }
 
-var submittedAlreadyOnce = false;
-
 function addNewPost(nameTyped) {
-	
-	if (submittedAlreadyOnce == true){
-		var inv = document.querySelector('#post');
-		inv.parentNode.removeChild(inv);
-	}
 	
 	var parentPostDiv = document.createElement("div");
 		parentPostDiv.setAttribute("id", "post");
@@ -35,12 +69,29 @@ function addNewPost(nameTyped) {
 	//Add the header thank you and then response to the page...
 	parentPostDiv.appendChild(namePost);
 	parentPostDiv.appendChild(responsePost);
-	document.querySelector(".Quiz1").appendChild(parentPostDiv);
 	
-	submittedAlreadyOnce = true; //We want to make sure to delete the previous post before making a new one...
+	if (flag == "quiz1"){
+		document.querySelector(".Quiz1").appendChild(parentPostDiv);
+	}else if (flag == "quiz2"){
+		document.querySelector(".Quiz2").appendChild(parentPostDiv);
+	}else if (flag == "quiz3"){
+		document.querySelector(".Quiz3").appendChild(parentPostDiv);
+	}else{
+		document.querySelector(".Quiz4").appendChild(parentPostDiv);
+	}
+	
 	
 	//Delete the submit button after submission
-	var removeSubmit = document.querySelector("#quiz1Submit");
+	if (flag == "quiz1"){
+		var removeSubmit = document.querySelector("#quiz1Submit");
+	}else if (flag == "quiz2"){
+		var removeSubmit = document.querySelector("#quiz2Submit");
+	}else if (flag == "quiz3"){
+		var removeSubmit = document.querySelector("#quiz3Submit");
+	}else{
+		var removeSubmit = document.querySelector("#quiz4Submit");
+	}
+	
 		removeSubmit.parentNode.removeChild(removeSubmit);
 	
 	//Create a new button
@@ -50,7 +101,16 @@ function addNewPost(nameTyped) {
 	
 	//Add under the text...
 		parentPostDiv.appendChild(createReturnHome);
+	
+	if (flag == "quiz1"){
 		document.querySelector(".Quiz1").appendChild(parentPostDiv);
+	}else if (flag == "quiz2"){
+		document.querySelector(".Quiz2").appendChild(parentPostDiv);
+	}else if (flag == "quiz3"){
+		document.querySelector(".Quiz3").appendChild(parentPostDiv);
+	}else{
+		document.querySelector(".Quiz4").appendChild(parentPostDiv);
+	}
 	
 	//Make the new button go to the quiz page on click
 	createReturnHome.addEventListener("click", function(){
