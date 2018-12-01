@@ -35,9 +35,11 @@ getHerc.addEventListener("mouseover", function(){
 	
 	jokeText.style.position = "fixed";
 	jokeText.style.fontSize = "500%";
-	jokeText.style.left = "25%";
-	
-	document.getElementById("test").appendChild(jokeText);
+
+
+
+	var img = document.getElementById("placer")
+	img.insertBefore(jokeText, img.childNodes[0])
 });
 
 getHerc.addEventListener("mouseleave", function(){

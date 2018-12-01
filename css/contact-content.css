@@ -85,3 +85,8 @@ textarea{
   width: 100%;
   height: 80px;
 }
+#makeInvis{
+  justify-content: center;
+  align-items: center;
+
+}
