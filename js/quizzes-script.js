@@ -66,7 +66,7 @@ function addNewPost(nameTyped) {
 		
 	var responsePost = document.createElement("p");
 		responsePost.setAttribute("class", "createSpaceForText")
-		responsePost.textContent = "After reviewing your submitted answers, we conclude that you should contact us or Herc to get some additional help.";//this could be a var after an if checks the choices...
+		responsePost.textContent = "After reviewing your submitted answers, " + randomSuggestion + ".";//this could be a var after an if checks the choices...
 	
 	//Add the header thank you and then response to the page...
 	parentPostDiv.appendChild(namePost);
@@ -128,3 +128,7 @@ window.onload = () => {
 	quiz3.addEventListener('submit', handleFormSubmit);
 	quiz4.addEventListener('submit', handleFormSubmit);
 };
+
+//So the responses are different each refresh of the page...
+var myArray = ["we think you should go see the CA's", "you should go visit Herc", "drop the class", "maybe sit down with Herc", "you should change majors", "you should cry"];
+var randomSuggestion = myArray[Math.floor(Math.random() * myArray.length)];
