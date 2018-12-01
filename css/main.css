@@ -158,13 +158,13 @@ img.brand-logo {
 h5.quackHeader{
 	font-size:18px;
 	font-weight:400;
-	margin:10px 0;
+	margin:5px 0;
 	
 	text-align:center;
 	width:auto;
 	
-	padding-top:32px;
-	padding-bottom:32px;
+	padding-top:15px;
+	padding-bottom:20px;
 }
 h5.quackHeader span {
 	background-color:#000;

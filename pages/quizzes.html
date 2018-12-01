@@ -61,29 +61,30 @@ Mitra Modi-->
 			
 			
 			<div class="spacer"></div>
-			
-			<div class="responsive">
-  				<div class="gallery">
-					<img class="quimage" src="../images/quiz-images/one.png" alt="Q1" onClick="q1()">
-  				</div>
-			</div>
-			
-			<div class="responsive">
-  				<div class="gallery">
-					<img class="quimage" src="../images/quiz-images/two.png" alt="Q2" onClick="q2()">
-  				</div>
-			</div>
-			
-			<div class="responsive">
-  				<div class="gallery"> 
-					<img class="quimage" src="../images/quiz-images/three.png" alt="Q3" onClick="q3()">
-  				</div>
-			</div>
-			
-			<div class="responsive">
-  				<div class="gallery">
-    				<img class="quimage" src="../images/quiz-images/four.png" alt="Q4" onClick="q4()">
-  				</div>
+			<div class="quizes">
+				<div class="responsive">
+					<div class="gallery">
+						<img class="quimage" src="../images/quiz-images/one.png" alt="Q1" id="Quiz1">
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<div class="gallery">
+						<img class="quimage" src="../images/quiz-images/two.png" alt="Q2" id="Quiz2">
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<div class="gallery"> 
+						<img class="quimage" src="../images/quiz-images/three.png" alt="Q3" id="Quiz3">
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<div class="gallery">
+						<img class="quimage" src="../images/quiz-images/four.png" alt="Q4" id="Quiz4">
+					</div>
+				</div>
 			</div>
 			
 			
@@ -97,107 +98,83 @@ Mitra Modi-->
 		
 	
 	
-	<div class="Quiz1">
-			<h5 class="quackHeader"><span>Quiz 1</span></h5>
+	<div class="Quiz1 quizTest">
+		<form id="quiz1">
+			<h5 class="quackHeader"><span>Homework Quiz</span></h5>
 			
 			
 			<div class="spacer"></div>
 			
+			<div class="moveToCenter">
+				<p class="nameq">What's your name?</p>
+
+				<input
+                  type="text"
+                  name="username"
+                  class="formUsername"
+                  placeholder="Name"
+				  id="quiz1name"
+                  required
+             	/>
+			</div>
+			
+			
 			<div class="responsiveq">
-  				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
+				<!--<div class="moveToCenter">-->
+  					<div class="question">
+						<p class = "AQ">Which is not a doggo?</p>
+						
+							<div class="moveToLeft">
+						<fieldset class="formlist" id="quiz1q1">
+							<label><input class="radio" type="radio" name="quiz1q1" value="woofer"> Woofer</label>
+							<label><input class="radio" type="radio" name="quiz1q1" value="clouds"> Clouds</label>
+							<label><input class="radio" type="radio" name="quiz1q1" value="pupper"> Pupper</label>
+							<label><input class="radio" type="radio" name="quiz1q1" value="snek"> Snek</label>
+						</fieldset>
+							</div>
+						
+  					</div>
+				<!--</div>-->
 			</div>
 			
 			<div class="responsiveq">
-  				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-  				<div class="question"> 
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-  				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-  				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+				<div class="question">
+    				<p class = "AQ">Who had the most likes on Spook-E-Gram?</p>
+					<fieldset class="formlist" id="quiz1q2">
+						<label><input class="radio" type="radio" name="quiz1q2" value="mr_skeletal"> mr_skeletal</label>
+						<label><input class="radio" type="radio" name="quiz1q2" value="soul_king"> soul_king</label>
+						<label><input class="radio" type="radio" name="quiz1q2" value="trum_bone"> trum_bone</label>
+						<label><input class="radio" type="radio" name="quiz1q2" value="skeletor"> skeletor</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
 				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+    				<p class = "AQ">Who got zero likes?</p>
+					<fieldset class="formlist" id="quiz1q3">
+						<label><input class="radio" type="radio" name="quiz1q3" value="mr_skeletal"> mr_skeletal</label>
+						<label><input class="radio" type="radio" name="quiz1q3" value="soul_king"> soul_king</label>
+						<label><input class="radio" type="radio" name="quiz1q3" value="trum_bone"> trum_bone</label>
+						<label><input class="radio" type="radio" name="quiz1q3" value="skeletor"> skeletor</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
 				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+    				<p class = "AQ">Which homework had a background color of #eee?</p>
+					<fieldset class="formlist" id="quiz1q4">
+						<label><input class="radio" type="radio" name="quiz1q4" value="hw1"> HW1 (Schedule/Links)</label>
+						<label><input class="radio" type="radio" name="quiz1q4" value="hw2"> HW2 (Spook-E-Gram)</label>
+						<label><input class="radio" type="radio" name="quiz1q4" value="hw3"> HW3 (Calculator)</label>
+						<label><input class="radio" type="radio" name="quiz1q4" value="hw4"> HW4 (Doggo Gram)</label>
+					</fieldset>
   				</div>
 			</div>
-			
-			<div class="responsiveq">
-				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
+		</form>
+		
+		<button class="sumbits" id="quiz1Submit" form="quiz1" value="Submit">Submit</button>
 			
 			<!--end of quizzes-->
 			<div class="clearfix"></div>
@@ -206,216 +183,154 @@ Mitra Modi-->
 	</div>
 		
 	
-	<div class="Quiz2">
-			<h5 class="quackHeader"><span>Quiz 2</span></h5>
+	<div class="Quiz2 quizTest">
+		<form id="quiz2">
+			<h5 class="quackHeader"><span>Herc Quiz</span></h5>
 			
 			
 			<div class="spacer"></div>
-			
+		<div class="moveToCenter">
+			<p class="nameq">What's your name?</p>
+			<input
+                  type="text"
+                  name="username"
+                  class="formUsername"
+                  placeholder="Name"
+				  id="quiz2name"
+                  required
+             />
+			</div>
 			<div class="responsiveq">
   				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+					<p class = "AQ">Who is objectively the greatest person?</p>
+					<fieldset class="formlist" id="quiz2q1">
+						<label><input class="radio" type="radio" name="quiz2q1" value="keanuReeves"> Keanu Reeves</label>
+						<label><input class="radio" type="radio" name="quiz2q1" value="herc"> Herc</label>
+						<label><input class="radio" type="radio" name="quiz2q1" value="gandhi"> Gandhi</label>
+						<label><input class="radio" type="radio" name="quiz2q1" value="favardin"> Favardin</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
   				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+					<p class = "AQ">What does Herc teach?</p>
+					<fieldset class="formlist" id="quiz2q2">
+						<label><input class="radio" type="radio" name="quiz2q2" value="cs146"> CS 146</label>
+						<label><input class="radio" type="radio" name="quiz2q2" value="cs115"> CS 115</label>
+						<label><input class="radio" type="radio" name="quiz2q2" value="cal103"> CAL 103</label>
+						<label><input class="radio" type="radio" name="quiz2q2" value="e146"> E 146</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
   				<div class="question"> 
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-  				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-  				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+					<p class = "AQ">What is Herc's native language?</p>
+					<fieldset class="formlist" id="quiz2q3">
+						<label><input class="radio" type="radio" name="quiz2q3" value="english"> English</label>
+						<label><input class="radio" type="radio" name="quiz2q3" value="italian"> Italian</label>
+						<label><input class="radio" type="radio" name="quiz2q3" value="greek"> Greek</label>
+						<label><input class="radio" type="radio" name="quiz2q3" value="albanian"> Albanian</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
 				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+    				<p class = "AQ">Who should make sure we get a good grade on this assignment?</p>
+					<fieldset class="formlist" id="quiz2q4">
+						<label><input class="radio" type="radio" name="quiz2q4" value="herc"> Herc</label>
+						<label><input class="radio" type="radio" name="quiz2q4" value="cs146TAs"> CS 146 TA's</label>
+						<label><input class="radio" type="radio" name="quiz2q4" value="us"> Us</label>
+						<label><input class="radio" type="radio" name="quiz2q4" value="allOfTheAbove"> All of the above</label>
+					</fieldset>
   				</div>
 			</div>
 			
-			<div class="responsiveq">
-				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
 			
-			<div class="responsiveq">
-				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
+		</form>	
+		
+		<button class="sumbits" id="quiz2Submit" form="quiz2" value="Submit">Submit</button>
 			
 			<!--end of quizzes-->
 			<div class="clearfix"></div>
 			<div class="spacer2"></div>
+		
 			
 	</div>
 		
 		
-	<div class="Quiz3">
-			<h5 class="quackHeader"><span>Quiz 3</span></h5>
+	<div class="Quiz3 quizTest">
+		<form id="quiz3">
+			
+			<h5 class="quackHeader"><span>Stevens Quiz</span></h5>
 			
 			
 			<div class="spacer"></div>
+			<div class="moveToCenter">
+			<p class="nameq">What's your name?</p>
 			
-			<div class="responsiveq">
-  				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
+			<input
+                  type="text"
+                  name="username"
+                  class="formUsername"
+                  placeholder="Name"
+				  id="quiz3name"
+                  required
+             />
 			</div>
-			
 			<div class="responsiveq">
   				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+					<p class = "AQ">What is the duck's name?</p>
+					<fieldset class="formlist" id="quiz3q1">
+						<label><input class="radio" type="radio" name="quiz3q1" value="modzilla"> Modzilla</label>
+						<label><input class="radio" type="radio" name="quiz3q1" value="atilla"> Atilla</label>
+						<label><input class="radio" type="radio" name="quiz3q1" value="herc"> Herc</label>
+						<label><input class="radio" type="radio" name="quiz3q1" value="donetallo"> Donetallo</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
   				<div class="question"> 
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+					<p class = "AQ">What is the worst Stevens academic building?</p>
+					<fieldset class="formlist" id="quiz3q2">
+						<label><input class="radio" type="radio" name="quiz3q2" value="babbio"> Babbio Center</label>
+						<label><input class="radio" type="radio" name="quiz3q2" value="morton"> Morton</label>
+						<label><input class="radio" type="radio" name="quiz3q2" value="eas"> EAS</label>
+						<label><input class="radio" type="radio" name="quiz3q2" value="carnagie"> Carnagie</label>
+					</fieldset>
   				</div>
 			</div>
 			
-			<div class="responsiveq">
-  				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
 			
 			<div class="responsiveq">
-  				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+				<div class="question">
+    				<p class = "AQ">What is the captain of police's name?</p>
+					<fieldset class="formlist" id="quiz3q3">
+						<label><input class="radio" type="radio" name="quiz3q3" value="mage"> Mage</label>
+						<label><input class="radio" type="radio" name="quiz3q3" value="magic"> Magic</label>
+						<label><input class="radio" type="radio" name="quiz3q3" value="magi"> Magi</label>
+						<label><input class="radio" type="radio" name="quiz3q3" value="martini"> Martini</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
 				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+    				<p class = "AQ">What is the best major?</p>
+					<fieldset class="formlist" id="quiz3q4">
+						<label><input class="radio" type="radio" name="quiz3q4" value="computerScience"> Computer Science</label>
+						<label><input class="radio" type="radio" name="quiz3q4" value="engineeringGeneral"> Engineering General</label>
+						<label><input class="radio" type="radio" name="quiz3q4" value="qf"> Quantitative Finance</label>
+						<label><input class="radio" type="radio" name="quiz3q4" value="musicTech"> Music Technology</label>
+					</fieldset>
   				</div>
 			</div>
-			
-			<div class="responsiveq">
-				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
+		</form>
+		
+		<button class="sumbits" id="quiz3Submit" form="quiz3" value="Submit">Submit</button>
 			
 			<!--end of quizzes-->
 			<div class="clearfix"></div>
@@ -424,107 +339,77 @@ Mitra Modi-->
 	</div>
 		
 	
-	<div class="Quiz4">
-			<h5 class="quackHeader"><span>Quiz 4</span></h5>
+	<div class="Quiz4 quizTest">
+		
+		<form id="quiz4">
+			
+			<h5 class="quackHeader"><span>Quizz Quiz</span></h5>
 			
 			
 			<div class="spacer"></div>
-			
+			<div class="moveToCenter">
+			<p class="nameq">What's your name?</p>
+		
+			<input
+                  type="text"
+                  name="username"
+                  class="formUsername"
+                  placeholder="Name"
+				  id="quiz4name"
+                  required
+             />
+			</div>
 			<div class="responsiveq">
   				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+					<p class = "AQ">Quiz 7 had the lowest average, what was it?</p>
+					<fieldset class="formlist" id="quiz4q1">
+						<label><input class="radio" type="radio" name="quiz4q1" value="65.3"> 65.3%</label>
+						<label><input class="radio" type="radio" name="quiz4q1" value="58.2"> 58.2%</label>
+						<label><input class="radio" type="radio" name="quiz4q1" value="60.9"> 60.9%</label>
+						<label><input class="radio" type="radio" name="quiz4q1" value="62.1"> 62.1%</label>
+					</fieldset>
   				</div>
 			</div>
 			
-			<div class="responsiveq">
-  				<div class="question">
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
 			
 			<div class="responsiveq">
   				<div class="question"> 
-					<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+					<p class = "AQ">The quizzes are _______?</p>
+					<fieldset class="formlist" id="quiz4q2">
+						<label><input class="radio" type="radio" name="quiz4q2" value="hard"> Hard</label>
+						<label><input class="radio" type="radio" name="quiz4q2" value="easy"> Easy</label>
+						<label><input class="radio" type="radio" name="quiz4q2" value="long"> Long</label>
+						<label><input class="radio" type="radio" name="quiz4q2" value="fun"> Fun</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
   				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-  				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+    				<p class = "AQ">What is more fun, this quiz or CS 146's?</p>
+					<fieldset class="formlist" id="quiz4q3">
+						<label><input class="radio" type="radio" name="quiz4q3" value="thisQuiz"> This quiz</label>
+						<label><input class="radio" type="radio" name="quiz4q3" value="cs146"> CS 146</label>
+						<label><input class="radio" type="radio" name="quiz4q3" value="equalFun"> They are both equally fun</label>
+						<label><input class="radio" type="radio" name="quiz4q3" value="neitherFun"> Neither are fun</label>
+					</fieldset>
   				</div>
 			</div>
 			
 			<div class="responsiveq">
 				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
+    				<p class = "AQ">What percent of your grade are quizzes worth?</p>
+					<fieldset class="formlist" id="quiz4q4">
+						<label><input class="radio" type="radio" name="quiz4q4" value="5"> 5%</label>
+						<label><input class="radio" type="radio" name="quiz4q4" value="10"> 10%</label>
+						<label><input class="radio" type="radio" name="quiz4q4" value="15"> 15%</label>
+						<label><input class="radio" type="radio" name="quiz4q4" value="20"> 20%</label>
+					</fieldset>
   				</div>
 			</div>
-			
-			<div class="responsiveq">
-				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
-			
-			<div class="responsiveq">
-				<div class="question">
-    				<p class = "AQ">QUESTION PLACE HOLDER</p>
-					<form class = "formlist">
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-						<label><input class="radio" type="radio" name="choice" value=""> ANSWER PLACEHOLDER</label>
-					</form>
-  				</div>
-			</div>
+		</form>
+		
+		<button class="sumbits" id="quiz4Submit" form="quiz4" value="Submit">Submit</button>
 			
 			<!--end of quizzes-->
 			<div class="clearfix"></div>
@@ -546,7 +431,8 @@ Mitra Modi-->
 
 
 <!--most of the time scripts have to load with the body-->
-<script src="../js/script_1.js"></script>
+<!--<script src="../js/script_1.js"></script>-->
+<script src="../js/quizzes-script.js"></script>
 	
 </body>
 </html>

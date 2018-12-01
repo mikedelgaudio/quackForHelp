@@ -24,17 +24,20 @@ Mitra Modi*/
 	font-family: 'Poppins', sans-serif;
 }
 
-
 div.gallery:hover {
 	/*opacity: 0.8;*/
 	transform: scale(1.2);
-    transition-duration: 300ms;
-    cursor: pointer;
+     transition-duration: 300ms;
+     cursor: pointer;
 }
+div.gallery {
+	transition: transform 450ms ease-in-out;
+}
+
 
 div.gallery img {
     width: 70%;
-    height: auto;
+	height: auto;
 }
 
 div.desc {
