@@ -53,7 +53,7 @@ Mitra Modi-->
 
 
 	<!--Put all your work inside this div!-->
-	<div class="main-content" id = "test">
+	<div class="main-content" id = "mainIdDiv">
 
 		<!--An idea for our pages to look uniform-->
 		<h5 class="quackHeader"><span>CONTACT US</span></h5>
@@ -62,12 +62,18 @@ Mitra Modi-->
 		<h4>&nbsp;Please tell us how we can help you in Herc's 146 class:</h4>
 			<div class="inner-content">
 				<div class="user">
-					<ul class="user-input">
-						<li><input type="text" id= "name" placeholder=" Your Name" /></li>
-						<li><input type="text" id="email" placeholder=" Email" /></li>
-						<li><textarea class="imtryingsomethingnew" id="message" type="text" placeholder=" Message" ></textarea></li>
-						<li><button type="button">Send Message!</button></li>
-					</ul>
+					<div class="user-input" id="contactFormDiv">
+						
+						<form id="contactFormFields">
+						<input type="text" id= "name" required placeholder=" Your Name" />
+						<input type="email" id="email" required placeholder=" Email" />
+						<input type="tel" required placeholder=" Telephone #">
+						<textarea class="imtryingsomethingnew" id="message" required type="text" placeholder=" Message" ></textarea>
+						
+						<button class="sumbits" input="submit" form="contactFormFields" value="Submit">Submit</button>
+						</form>
+						
+					</div>
 				</div>
 				<div class="contact">
 					<ul class="list">
@@ -77,7 +83,7 @@ Mitra Modi-->
 							<p class="lighterText pad">&emsp; &nbsp; +1 (201) 216-5345 </p>
 						</li>
 						<li><i class="fa fa-envelope"></i>&nbsp;&nbsp; Email
-							<p class="lighterText pad">&emsp; &nbsp; kchen19@stevens.edu</p></li>
+							<p class="lighterText pad">&emsp; &nbsp; <a href="mailto:itsekour@stevens.edu?Subject=Help%20Herc!" target="_top">itsekour@stevens.edu</a></p></li>
 					</ul>
 				</div>
 			</div>
