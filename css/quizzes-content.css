@@ -235,3 +235,16 @@ div.desc {
 fieldset{
 	border: 0;
 }
+
+.createSpaceForText{
+	margin-bottom: 10px;
+}
+.takeQuizAgain{
+	font-size: 125%;
+	height:100px;
+	width: 25%;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-bottom: 5%;
+	transition: transform 1s ease-in-out;
+}
