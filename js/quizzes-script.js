@@ -36,6 +36,8 @@ function handleFormSubmit(event) {
    event.preventDefault();
    // Get values of inputs
    // Pass values to addNewPost()
+	
+//Get the name the user enters, depends on what quiz they are on thats why we use a flag...
 	if (flag == "quiz1"){
 		var nameTyped = document.getElementById("quiz1name").value;	
 	}else if (flag == "quiz2"){
@@ -45,13 +47,13 @@ function handleFormSubmit(event) {
 	}else{
 		var nameTyped = document.getElementById("quiz4name").value;
 	}
-	
+
+//Make sure the first letter of the name is always capital for style purposes...
 	nameTyped = nameTyped.charAt(0).toUpperCase() + nameTyped.slice(1);
 	
 	console.log("Name typed: " + nameTyped);
 	
 	addNewPost(nameTyped);
-	
 }
 
 function addNewPost(nameTyped) {
@@ -60,7 +62,7 @@ function addNewPost(nameTyped) {
 		parentPostDiv.setAttribute("id", "post");
 		
 	var namePost = document.createElement("h1");
-		namePost.textContent = "Thank you for taking our quiz " + nameTyped;
+		namePost.textContent = "Thank you for taking our quiz, " + nameTyped + ".";
 		
 	var responsePost = document.createElement("p");
 		responsePost.setAttribute("class", "createSpaceForText")
